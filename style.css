@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .nav-link {
+    font-weight: bold;
+    color: black;
+  }
+    
+  .container-fluid {
+    margin-top: 20px;
+  }
+  
+  .table {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  
+  
+  
+  #peminjaman-form .form-control {
+    margin-bottom: 15px;
+  }
+
+  .search-container {
+    display: flex; /* Mengatur elemen dalam satu baris */
+    justify-content: center; /* Mengatur agar elemen berada di tengah */
+    margin: 20px 0; /* Memberi jarak atas dan bawah */
+}
+
+.search-container input[type="text"] {
+    padding: 10px; /* Memberi padding di dalam input */
+    font-size: 16px; /* Ukuran font untuk teks */
+    border: 1px solid #ccc; /* Border abu-abu */
+    border-radius: 5px; /* Membuat sudut input melengkung */
+    margin-right: 10px; /* Memberi jarak antara input dan tombol */
+    width: 300px; /* Lebar input */
+}
+
+.search-container button {
+    padding: 10px 15px; /* Padding dalam tombol */
+    font-size: 16px; /* Ukuran font untuk teks tombol */
+    background-color: #007bff; /* Warna latar belakang hijau */
+    color: white; /* Warna teks putih */
+    border: none; /* Menghapus border default tombol */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.search-container button:hover {
+    background-color: #218838; /* Mengubah warna latar saat hover */
+}
+
+  

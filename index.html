@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'none';">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Aplikasi Peminjaman</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="riwayat.html">Riwayat</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-danger" id="logout-btn">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h2>Halaman Home</h2>
+    <!-- Form Peminjaman -->
+    <form id="peminjaman-form">
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="waktu">Waktu</label>
+          <input type="time" class="form-control" id="waktu" required>
+        </div>
+        <div class="col-md-6">
+          <label for="tanggal">Tanggal</label>
+          <input type="date" class="form-control" id="tanggal" required>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="nama">Nama</label>
+          <input type="text" class="form-control" id="nama" required>
+        </div>
+        <div class="col-md-6">
+          <label for="jabatan">Jabatan</label>
+          <select class="form-control" id="jabatan">
+            <option>Manager</option>
+            <option>Staff</option>
+            <option>Supervisor</option>
+            <option>Lainnya</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="divisi">Fungsi</label>
+          <select class="form-control" id="divisi">
+            <option>HSSE</option>
+            <option>HRD</option>
+            <option>BS</option>
+            <option>Lainnya</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="barang">Barang</label>
+          <input type="text" class="form-control" id="barang" required>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="jumlah">Jumlah</label>
+          <input type="number" class="form-control" id="jumlah" required>
+        </div>
+        <div class="col-md-6">
+          <label for="keterangan">Keterangan</label>
+          <textarea class="form-control" id="keterangan"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Konfirmasi</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
